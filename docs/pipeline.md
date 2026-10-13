@@ -6,7 +6,7 @@ O pipeline foi desenvolvido para demonstrar um fluxo completo de classificação
 
 ## Fluxo de execução
 
-![Fluxo completo da classificação acadêmica](images/fluxo_classificacao_academica.png)
+![](/images/fluxo_classificacao_academica.png)
 
 > Para exibir a imagem no site, mantenha uma cópia do arquivo em `docs/images/fluxo_classificacao_academica.png`.
 
