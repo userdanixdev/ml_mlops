@@ -201,4 +201,9 @@ O estudo demonstra a implementação de um fluxo introdutório de classificaçã
 
 A experiência consolida conceitos essenciais de preparação de dados, treinamento, inferência e validação, servindo como base para estudos posteriores em Machine Learning e Deep Learning.
 
+## Autor:
+
+> Daniel Martins França
+
+
 
