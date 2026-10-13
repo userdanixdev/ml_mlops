@@ -1,0 +1,10 @@
+site_name: Deep Learning Classification
+site_description: Classificação binária de resultados acadêmicos com PyTorch
+theme:
+  name: material
+  language: pt-BR
+
+nav:
+  - Início: index.md
+  - Pipeline: pipeline.md
+  - Avaliação do modelo: avaliacao.md
