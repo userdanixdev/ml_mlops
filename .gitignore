@@ -9,3 +9,4 @@ machine_learning/
 venv/
 env/
 .conda/
+__pycache__/
