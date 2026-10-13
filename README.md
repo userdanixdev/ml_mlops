@@ -151,7 +151,7 @@ A base original é preservada, permitindo distinguir os resultados conhecidos da
 
 ### Fluxo do estudo:
 
-[](/images/fluxo_classificacao_academica.png)
+![](/images/fluxo_classificacao_academica.png)
 
 ## Como executar
 
