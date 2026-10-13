@@ -8,7 +8,7 @@
 
 # Classificação Binária de Desempenho de Alunos com PyTorch
 
-## Sobre o estudo
+## Sobre o estudo:
 
 Este estudo foi desenvolvido com o objetivo de aplicar conceitos de **Machine Learning e Deep Learning com Python e PyTorch**, construindo um fluxo completo de classificação binária para prever o resultado acadêmico de estudantes.
 
