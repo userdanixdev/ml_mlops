@@ -149,6 +149,10 @@ Contém os dados originais e as colunas adicionais:
 
 A base original é preservada, permitindo distinguir os resultados conhecidos das previsões geradas.
 
+### Fluxo do estudo:
+
+[](/images/Fluxo%20Completo%20de%20Classificação%20Acadêmica.png)
+
 ## Como executar
 
 ### 1. Instalar as dependências
