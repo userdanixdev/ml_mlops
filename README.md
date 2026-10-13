@@ -8,9 +8,9 @@
 
 # Classificação Binária de Desempenho de Alunos com PyTorch
 
-## Sobre o projeto
+## Sobre o estudo
 
-Este projeto foi desenvolvido com o objetivo de aplicar conceitos de **Machine Learning e Deep Learning com Python e PyTorch**, construindo um fluxo completo de classificação binária para prever o resultado acadêmico de estudantes.
+Este estudo foi desenvolvido com o objetivo de aplicar conceitos de **Machine Learning e Deep Learning com Python e PyTorch**, construindo um fluxo completo de classificação binária para prever o resultado acadêmico de estudantes.
 
 A aplicação utiliza um dataset sintético gerado com NumPy, contendo características relacionadas ao estudo, conhecimento prévio e facilidade de aprendizado. A partir desses dados, um modelo de classificação é treinado para identificar padrões e prever resultados ausentes.
 
@@ -30,7 +30,7 @@ A aplicação utiliza um dataset sintético gerado com NumPy, contendo caracter�
 * **Scikit-learn** — divisão dos dados e avaliação do modelo.
 * **OpenPyXL** — suporte à leitura e gravação de arquivos Excel.
 
-## Estrutura do projeto
+## Estrutura do estudo
 
 ```text
 Deep Learning/
@@ -138,7 +138,7 @@ Os resultados demonstram bom desempenho no conjunto de teste utilizado neste exp
 
 ### `alunos_base_original.xlsx`
 
-Contém os dados originais gerados pelo projeto, incluindo os resultados conhecidos e os campos inicialmente vazios.
+Contém os dados originais gerados pelo estudo, incluindo os resultados conhecidos e os campos inicialmente vazios.
 
 ### `alunos_com_predicoes.xlsx`
 
@@ -184,7 +184,7 @@ Além disso, as probabilidades produzidas pelo modelo não devem ser interpretad
 
 ## Aprendizados
 
-O desenvolvimento deste projeto permitiu praticar conceitos fundamentais de:
+O desenvolvimento deste estudo permitiu praticar conceitos fundamentais de:
 
 * Manipulação e preparação de dados.
 * Conversão de arrays NumPy e DataFrames em tensores PyTorch.
@@ -197,7 +197,7 @@ O desenvolvimento deste projeto permitiu praticar conceitos fundamentais de:
 
 ## Conclusão
 
-O projeto demonstra a implementação de um fluxo introdutório de classificação binária com Python e PyTorch, desde a geração dos dados até a avaliação do modelo.
+O estudo demonstra a implementação de um fluxo introdutório de classificação binária com Python e PyTorch, desde a geração dos dados até a avaliação do modelo.
 
 A experiência consolida conceitos essenciais de preparação de dados, treinamento, inferência e validação, servindo como base para estudos posteriores em Machine Learning e Deep Learning.
 

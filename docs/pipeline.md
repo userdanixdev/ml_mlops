@@ -8,8 +8,6 @@ O pipeline foi desenvolvido para demonstrar um fluxo completo de classificação
 
 ![](/images/fluxo_classificacao_academica.png)
 
-> Para exibir a imagem no site, mantenha uma cópia do arquivo em `docs/images/fluxo_classificacao_academica.png`.
-
 ## 1. Geração dos dados
 
 O NumPy é utilizado para gerar dados sintéticos relacionados a três características dos estudantes:
