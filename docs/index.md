@@ -20,7 +20,7 @@ A base contém registros com resultados conhecidos, utilizados para treinamento 
 
 ## Fluxo Inicial do estudo:
 
-![Fluxo completo do projeto de classificação acadêmica](images//fluxo_matriz_confusao_as_metricas.png)
+![Fluxo inicial do projeto de classificação acadêmica](images//fluxo_matriz_confusao_as_metricas.png)
 
 ## Entendendo o fluxo de classificação e avaliação
 
