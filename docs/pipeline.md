@@ -6,7 +6,7 @@ O pipeline foi desenvolvido para demonstrar um fluxo completo de classificação
 
 ## Fluxo de execução
 
-![Fluxo completo](/images//fluxo_classificacao_academica.png)
+![Fluxo completo](/images/fluxo_classificacao_academica.png)
 
 ## 1. Geração dos dados
 
