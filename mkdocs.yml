@@ -3,7 +3,8 @@ site_description: Classificação binária de resultados acadêmicos com PyTorch
 theme:
   name: material
   language: pt-BR
-
+markdown_extensions:
+  - attr_list
 nav:
   - Início: index.md
   - Pipeline: pipeline.md

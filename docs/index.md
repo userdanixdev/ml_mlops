@@ -94,3 +94,7 @@ Este projeto utiliza dados sintéticos para fins educacionais. Portanto, os resu
 ---
 
 **Projeto desenvolvido para praticar e documentar um pipeline de classificação binária com Python e PyTorch.**
+
+# Aproveita e segue por lá!
+
+[Repositório do GitHub](https://github.com/userdanixdev/ml_mlops){ .md-button }

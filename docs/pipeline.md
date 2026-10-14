@@ -72,3 +72,4 @@ Os resultados são apresentados na página [Avaliação do modelo](avaliacao.md)
 ## Observação
 
 A avaliação independente é realizada em um treinamento separado. Ela mede o desempenho do modelo no conjunto de teste e não deve ser confundida com as previsões produzidas para os registros sem resultado.
+
