@@ -1,0 +1,22 @@
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Modelos e arquivos temporários
+*.pt
+*.pth
+*.log
+Machine Learning/

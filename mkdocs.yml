@@ -1,0 +1,17 @@
+
+site_name: Vértice Seguros
+site_description: Estudo de preparação de dados,regressão e previsão com PyTorch.
+
+theme:
+  name: material
+  language: pt-BR
+
+markdown_extensions:
+  - attr_list
+
+nav:
+  - Início: index.md
+  - Preparação dos dados: pre_processamento_dados.md
+  - Modelo de regressão: criacao_modelo.md
+  - Avaliação do modelo: avaliacao_modelo.md
+  - Previsões: previsoes.md

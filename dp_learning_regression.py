@@ -6,55 +6,61 @@ from pathlib import Path
 # Carregar dataset
 df = pd.read_csv("src/dataset_seguros_vertice.csv")
 
-# Criar cópia para preservar os dados originais
+# Preservar os dados originais
 df_scale = df.copy()
 
-# Separar registros com valor de seguro conhecido
+# Separar registros com seguro conhecido
 df_conhecidos = df_scale[df_scale["valor_seguro"].notna()].copy()
 
-# Selecionar a variável de entrada (idade)
-X = df_conhecidos[["idade"]]
-
-# Selecionar o alvo (valor do seguro)
+# Variável de entrada e alvo conhecidos
+X = df_scale[["idade"]]
 y = df_conhecidos[["valor_seguro"]]
 
-# Padronização dos valores de entrada e alvo:
-# Padronização com StandardScaler
+# Padronização das idades: todas as linhas
 scaler_x = StandardScaler()
-idades_padronizadas = scaler_x.fit_transform(X).round(3)
+idades_padronizadas = scaler_x.fit_transform(X).ravel().round(3)
 
+# Padronização dos seguros: somente valores conhecidos
 scaler_y = StandardScaler()
-seguros_padronizados = scaler_y.fit_transform(y).round(3)
+seguros_padronizados = (
+    scaler_y.fit_transform(y).ravel().round(3)
+)
 
-# Normalização MinMaxScaler (0 a 1)
+# Normalização das idades: todas as linhas
 minmax_x = MinMaxScaler()
-idades_normalizadas = minmax_x.fit_transform(X).round(3)
+idades_normalizadas = minmax_x.fit_transform(X).ravel().round(3)
 
+# Normalização dos seguros: somente valores conhecidos
 minmax_y = MinMaxScaler()
-seguros_normalizados = minmax_y.fit_transform(y).round(3)
+seguros_normalizados = (
+    minmax_y.fit_transform(y).ravel().round(3)
+)
 
-# DataFrames para visualizar os resultados
-df_padronizado = pd.DataFrame({
-    "idade_padronizada":idades_padronizadas.ravel(),
-    "seguro_padronizado":seguros_padronizados.ravel()},
-    index=X.index)
-df_normalizado = pd.DataFrame({
-    "idade_normalizada":idades_normalizadas.ravel(),
-    "seguro_normalizado":seguros_normalizados.ravel()},
-    index=X.index)
-
-# Preservar os valores ausentes:
-
+# Criar DataFrame padronizado completo
 df_padronizado_completo = df_scale[
-    ["nome","idade","valor_seguro"]
-].join(df_padronizado)
+    ["nome", "idade", "valor_seguro"]
+].copy()
 
+df_padronizado_completo["idade_padronizada"] = idades_padronizadas
+df_padronizado_completo["seguro_padronizado"] = float("nan")
+
+df_padronizado_completo.loc[
+    df_conhecidos.index, "seguro_padronizado"
+] = seguros_padronizados
+
+# Criar DataFrame normalizado completo
 df_normalizado_completo = df_scale[
-    ["nome","idade","valor_seguro"]
-].join(df_normalizado)
+    ["nome", "idade", "valor_seguro"]
+].copy()
 
-# Visualização dos resultados:
+df_normalizado_completo["idade_normalizada"] = idades_normalizadas
+df_normalizado_completo["seguro_normalizado"] = float("nan")
 
+df_normalizado_completo.loc[
+    df_conhecidos.index, "seguro_normalizado"
+] = seguros_normalizados
+
+# Visualizar resultados
 print("\nDados originais:")
 print(df_scale.head(10))
 
@@ -65,35 +71,24 @@ print("\nDados normalizados:")
 print(df_normalizado_completo.head(10))
 
 print("\nMínimos após normalização:")
-print(df_normalizado.min())
+print(df_normalizado_completo[["idade_normalizada", "seguro_normalizado"]].min())
 
 print("\nMáximos após normalização:")
-print(df_normalizado.max())
+print(df_normalizado_completo[["idade_normalizada", "seguro_normalizado"]].max())
 
-print("\nQuantidade de valores ausentes preservados:")
+print("\nValores ausentes:")
 print(df_normalizado_completo.isna().sum())
 
-# Diretório camada Bronze:
+# Criar diretório Bronze
 pasta_bronze = Path("src") / "bronze"
-pasta_bronze.mkdir(parents=True, exist_ok = True)
+pasta_bronze.mkdir(parents=True, exist_ok=True)
 
-# Salvar resultados na camada bronze:
+# Salvar datasets
+arquivo_padronizado = pasta_bronze / "dataset_seguros_padronizado.csv"
+arquivo_normalizado = pasta_bronze / "dataset_seguros_normalizado.csv"
 
-arquivo_padronizado = (
-    pasta_bronze / "dataset_seguros_padronizado.csv"
-)
-df_padronizado_completo.to_csv(
-    arquivo_padronizado,
-    index=False
-)
-# Salvar dataset normalizado:
-arquivo_normalizado = (
-    pasta_bronze / "dataset_seguros_normalizado.csv"
-)
-df_normalizado_completo.to_csv(
-    arquivo_normalizado,
-    index=False
-)
+df_padronizado_completo.to_csv(arquivo_padronizado, index=False)
+df_normalizado_completo.to_csv(arquivo_normalizado, index=False)
 
 print(f"\nDataset padronizado salvo em: {arquivo_padronizado.resolve()}")
 print(f"Dataset normalizado salvo em: {arquivo_normalizado.resolve()}")

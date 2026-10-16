@@ -1,26 +1,15 @@
-# Redes Neurais Artificiais: funções de ativação e regressão
-
-Este estudo tem como objetivo analisar como diferentes funções de ativação influenciam o comportamento de uma rede neural artificial durante o aprendizado de uma relação entre a idade do segurado e o valor do seguro de automóvel.
-
-O dataset contém múltiplas observações, utilizando a idade como variável de entrada (*input*) e o valor do seguro como variável-alvo (*target*).
-
-A hipótese considerada é que o valor do seguro tende a ser maior para pessoas mais jovens e também pode aumentar em idades mais avançadas, formando uma relação potencialmente não linear.
-
-Durante o experimento, os dados serão normalizados para facilitar o treinamento. A rede neural será treinada para ajustar seus parâmetros, como pesos (*weights*) e bias, buscando aproximar suas previsões dos valores observados no dataset.
-
-O foco principal será comparar o comportamento das funções de ativação e observar como elas influenciam a curva aprendida pelo modelo, a capacidade de representar a relação entre as variáveis e a qualidade das previsões.
-
-O experimento vai investigar se a rede consegue aproximar o comportamento observado nos dados. A forma real da curva dependerá do dataset, da arquitetura e do treinamento.
-
 # Redes Neurais Artificiais: Previsão de Valores de Seguros
+## Funções de ativação e Regressão
 
-## Sobre o projeto
-
-Este projeto tem como objetivo estudar redes neurais artificiais utilizando Python e PyTorch, com foco na regressão e na influência das funções de ativação sobre o comportamento do modelo.
+Este estudo tem como objetivo analisar como diferentes funções de ativação influenciam o comportamento de uma rede neural artificial durante o aprendizado de máquina. O estudo utiliza Python e PyTorch, com foco na regressão e na influência das funções de ativação sobre o comportamento do modelo.
 
 O experimento utiliza um dataset sintético de 100 segurados fictícios, contendo nome, idade e valor do seguro automotivo. Parte dos valores dos seguros estará ausente, simulando uma situação em que uma empresa precisa recuperar informações de sua base de dados.
 
 A proposta é treinar uma rede neural para aprender a relação entre a idade dos segurados e os valores conhecidos dos seguros, realizar previsões para os registros incompletos e avaliar a qualidade dos resultados por meio de métricas de validação.
+
+O foco principal será comparar o comportamento das funções de ativação e observar como elas influenciam a curva aprendida pelo modelo, a capacidade de representar a relação entre as variáveis e a qualidade das previsões.
+
+O experimento vai investigar se a rede consegue aproximar o comportamento observado nos dados. A forma real da curva dependerá do dataset, da arquitetura e do treinamento.
 
 ## Cenário do negócio
 
@@ -50,7 +39,7 @@ O dataset será composto por 100 observações e três colunas:
 
 | Coluna         | Descrição                           | Tipo                           |
 | -------------- | ----------------------------------- | ------------------------------ |
-| `nome`         | Nome fictício do segurado           | Texto                          |
+| `nome`         | Nome do segurado                    | Texto                          |
 | `idade`        | Idade do segurado em anos           | Numérico                       |
 | `valor_seguro` | Valor do seguro automotivo em reais | Numérico, com valores ausentes |
 
@@ -150,9 +139,6 @@ Dataset sintético
 Separação dos valores conhecidos e ausentes
        |
        v
-Divisão em treinamento, validação e teste
-       |
-       v
 Normalização dos dados
        |
        v
@@ -166,9 +152,6 @@ Avaliação das funções de ativação
        |
        v
 Validação com MAE, RMSE e análise gráfica
-       |
-       v
-Comparação com modelo de referência
        |
        v
 Previsão dos valores ausentes
@@ -214,18 +197,3 @@ Este estudo busca demonstrar, de forma prática, como redes neurais artificiais 
 A análise das funções de ativação, do processo de treinamento e das métricas de validação permitirá compreender não apenas como gerar previsões, mas também como avaliar se o modelo aprendeu padrões úteis e quais são suas limitações.
 
 O experimento será desenvolvido progressivamente, com código reproduzível, análise dos resultados e documentação das etapas utilizando Python, PyTorch e MkDocs.
-
-
-np.random.seed(42): permite reproduzir os mesmos dados em novas execuções.
-
-np.random.randint(18, 81, size=N): gera 100 idades entre 18 e 80 anos, inclusive.
-
-np.random.normal(0, 250, size=N): adiciona variação aleatória para simular diferenças nos preços.
-
-efeito_idade: faz o valor sintético do seguro aumentar nas idades mais distantes de 40 anos.
-
-np.random.choice(...): seleciona 15 registros distintos para ocultar seus valores.
-
-np.nan: representa um valor ausente no Pandas.
-
-to_csv(...): salva o dataset original sem normalizar a idade.
