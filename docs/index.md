@@ -1,8 +1,8 @@
-# Vértice Seguros - Estudo de Regressão com PyTorch
+# Vértice Seguros - Estudos de Regressão com RNA 
 
 ## Objetivo do estudo
 
-Este projeto tem como objetivo explorar as etapas de preparação, transformação e análise de dados aplicadas a um problema de regressão utilizando Python e PyTorch. O estudo busca compreender como características dos segurados podem ser utilizadas para estimar valores de seguros por meio de um modelo de aprendizado de máquina.
+Este estudo tem como objetivo explorar as etapas de preparação, transformação e análise de dados aplicadas a um problema de regressão utilizando Python e PyTorch com Redes Neurais Aritificais **(RNA)**. O estudo busca compreender como características dos segurados podem ser utilizadas para estimar valores de seguros por meio de um modelo de aprendizado de máquina.
 
 ## Cenário proposto
 
