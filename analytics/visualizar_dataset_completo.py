@@ -5,8 +5,8 @@ import torch
 
 from pathlib import Path
 from sklearn.preprocessing import MinMaxScaler
-from dp_learning_regression_1 import X
-from treinar_modelo_2 import model
+from b_preparar_tensores import X
+from c_treinar_modelo import model
 
 # Arquivos
 arquivo_original = Path("src/dataset_seguros_vertice.csv")
