@@ -19,8 +19,40 @@ optimizer.step()
 
 * **optimizer.step()** atualiza os parâmetros para tentar reduzir a função de perda.
 
-> Observação importante: Portanto, no gráfico, ao comparar a soma com e sem bias_saida, está sendo isolado apenas a influência do bias da camada de saída. Os biases da camada oculta continuam presentes nas ativações dos dois perceptrons.
+> Observação importante: Os biases da camada oculta continuam presentes nas ativações dos dois perceptrons.
 
 *O bias oferece um parâmetro adicional para o modelo aprender a relação entre idade e valor do seguro. Isso pode melhorar o ajuste, mas não garante uma previsão melhor por si só: o resultado depende dos dados, do treinamento e da arquitetura.*
 
+## Desnormalização e recuperação dos valores previstos:
+
+Após o treinamento da rede neural, as previsões são geradas na escala normalizada, entre 0 e 1. Para recuperar a escala monetária original, utilizamos o método ```inverse_transform()``` da biblioteca **scikit-learn**, aplicando o mesmo **MinMaxScaler** ajustado com os valores de seguro conhecidos.
+
+O ```inverse_transform()``` utiliza o mínimo e o máximo dos valores reais conhecidos para recuperar a escala monetária original.
+
+```python
+scaler_y = MinMaxScaler()
+scaler_y.fit(valores_conhecidos)
+
+previsoes_reais = scaler_y.inverse_transform(
+    previsoes_normalizadas.reshape(-1, 1)
+)
+```
+> **Observação**: Essa transformação permite converter as previsões normalizadas em valores monetários, facilitando sua interpretação e análise.
+
+## Visualizações das previsões:
+
+Com a biblioteca **matplotlib**, geramos um gráfico de dispersão que relaciona a idade aos valores de seguro previstos pelo modelo.
+
+Dessa forma podemos obter os valores reais dos dados previstos:
+
 ![idadeXvalor_previsto](images/idade_vs_valor_previsto.png)
+
+Em seguida, integramos as previsões desnormalizadas ao dataset original, preservando os valores reais existentes e preenchendo os registros que apresentavam valores ausentes com as estimativas produzidas pela rede neural.
+
+O gráfico abaixo apresenta o conjunto de dados completo, destacando os valores reais, as previsões dos registros incompletos e a curva de saída aprendida pelo modelo.
+
+![dataset_completo](images/dataset_completo_reais_previstos.png)
+
+Essa visualização permite analisar conjuntamente os dados observados e estimados, além de observar o comportamento da rede neural ao longo da faixa de idades utilizada no projeto.
+
+* **Observação técnica**: *a curva representa a saída combinada dos neurônios ocultos com ativação sigmoidal e da camada de saída linear. Portanto, seu formato não precisa corresponder a uma única curva sigmoidal perfeita.*

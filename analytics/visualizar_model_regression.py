@@ -6,7 +6,7 @@ import torch
 from pathlib import Path
 from sklearn.preprocessing import MinMaxScaler
 from dp_learning_regression_1 import X, y, X_prever
-from dp_learning_regression_2 import model
+from treinar_modelo_2 import model
 
 # Diretório de saída
 pasta_saida = Path("analytics/graficos")

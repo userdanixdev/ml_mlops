@@ -1,7 +1,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from dp_learning_regression_2 import Model, model
+from treinar_modelo_2 import Model, model
 import torch 
 from pathlib import Path
 

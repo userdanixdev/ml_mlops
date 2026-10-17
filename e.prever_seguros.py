@@ -1,5 +1,5 @@
 from dp_learning_regression_1 import X_prever, df_prever
-from dp_learning_regression_2 import model
+from treinar_modelo_2 import model
 import torch
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
