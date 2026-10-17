@@ -1,7 +1,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from treinar_modelo_2 import Model, model
+from c_treinar_modelo import Model, model
 import torch 
 from pathlib import Path
 

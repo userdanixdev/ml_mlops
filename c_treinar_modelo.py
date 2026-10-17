@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from b.treinar_tensores import X,y
+from b_preparar_tensores import X,y 
 
 class Model(nn.Module):
     def __init__(self,hidden_neurons=2):
