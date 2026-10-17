@@ -1,8 +1,8 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from treinar_modelo_2 import Model, model
-from dp_learning_regression_3 import saida_1, saida_2, bias_saida, x_numpy, tensor_to_numpy, pasta_saida
+from c_treinar_modelo import Model, model
+from d_visualizar_ativacoes import saida_1, saida_2, bias_saida, x_numpy, tensor_to_numpy, pasta_saida
 import torch 
 from pathlib import Path
 
