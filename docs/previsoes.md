@@ -56,3 +56,4 @@ O gráfico abaixo apresenta o conjunto de dados completo, destacando os valores 
 Essa visualização permite analisar conjuntamente os dados observados e estimados, além de observar o comportamento da rede neural ao longo da faixa de idades utilizada no projeto.
 
 * **Observação técnica**: *a curva representa a saída combinada dos neurônios ocultos com ativação sigmoidal e da camada de saída linear. Portanto, seu formato não precisa corresponder a uma única curva sigmoidal perfeita.*
+

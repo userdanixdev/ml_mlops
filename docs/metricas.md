@@ -82,3 +82,11 @@ Como próximos experimentos, serão consideradas as seguintes possibilidades:
 
 *Por fim, as previsões dos 15 valores ausentes constituem a aplicação prática do modelo desenvolvido.*
 
+Disponibilizei a documentação técnica do estudo, com explicações sobre a estrutura, os códigos-fonte e as etapas do processo de criação e avaliação de uma rede neural. 
+
+A documentação aborda a preparação e normalização dos dados, a criação de tensores, o treinamento do modelo, a geração de previsões para valores ausentes e a análise dos resultados por meio de métricas de avaliação.
+
+🔗 Acesse a documentação técnica: [Documentação técnica](https://github.com/userdanixdev/ml_mlops/tree/artificial_neural_networks){ .md-button }
+
+> 💻 O material está organizado para facilitar a consulta ao código e o entendimento de cada etapa do projeto.
+

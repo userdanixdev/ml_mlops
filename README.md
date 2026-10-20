@@ -56,8 +56,6 @@ Exemplo ilustrativo:
 | Elisa Rocha  |    35 |        `NaN` |
 | Felipe Alves |    24 |        `NaN` |
 
-Os valores apresentados são apenas exemplos ilustrativos. O dataset definitivo será gerado por código Python, permitindo a reprodução do experimento.
-
 ## Metodologia
 
 O desenvolvimento será organizado nas seguintes etapas:
@@ -127,38 +125,9 @@ As previsões serão associadas aos respectivos segurados e armazenadas em um ar
 
 Os valores estimados serão tratados como previsões do modelo, e não como valores reais confirmados.
 
-## Fluxo do experimento
+## Fluxo do experimento:
 
-```text
-Dataset sintético
-       |
-       v
-100 segurados
-       |
-       v
-Separação dos valores conhecidos e ausentes
-       |
-       v
-Normalização dos dados
-       |
-       v
-Construção da rede neural com PyTorch
-       |
-       v
-Treinamento e ajuste dos parâmetros
-       |
-       v
-Avaliação das funções de ativação
-       |
-       v
-Validação com MAE, RMSE e análise gráfica
-       |
-       v
-Previsão dos valores ausentes
-       |
-       v
-Exportação dos resultados
-```
+![Fluxo](analytics/graficos/fluxo_estudo_ml.png)
 
 ## Tecnologias utilizadas
 
@@ -170,18 +139,6 @@ Exportação dos resultados
 * **Scikit-learn:** apoio à divisão dos dados e ao cálculo de métricas de regressão.
 * **MkDocs:** documentação do estudo e publicação no GitHub Pages.
 
-## Resultados esperados
-
-Ao final do estudo, espera-se:
-
-* Compreender como a rede neural ajusta seus pesos e bias durante o treinamento.
-* Visualizar como as funções de ativação influenciam a curva de previsão.
-* Identificar qual configuração apresenta melhor desempenho nos dados de validação.
-* Medir os erros de previsão utilizando MAE e RMSE.
-* Verificar se a rede neural supera o modelo de referência.
-* Gerar estimativas para os valores ausentes do dataset.
-* Reconhecer as limitações de utilizar somente a idade para estimar o preço de um seguro.
-
 ## Limitações do estudo
 
 O valor real de um seguro automotivo depende de diversos fatores, como modelo do veículo, localização, cobertura contratada e histórico de sinistros. Portanto, a idade, isoladamente, pode não explicar adequadamente o preço.
@@ -192,8 +149,14 @@ A qualidade das previsões será analisada considerando as métricas de validaç
 
 ## Conclusão
 
-Este estudo busca demonstrar, de forma prática, como redes neurais artificiais podem ser aplicadas a um problema de regressão com valores ausentes.
+O projeto demonstrou a aplicação de uma rede neural desenvolvida com PyTorch para estimar valores de seguros a partir da idade dos clientes, incluindo a previsão de 15 valores ausentes no conjunto de dados.
 
-A análise das funções de ativação, do processo de treinamento e das métricas de validação permitirá compreender não apenas como gerar previsões, mas também como avaliar se o modelo aprendeu padrões úteis e quais são suas limitações.
+A avaliação dos 85 registros com valores conhecidos apresentou MAE de R$ 226,31, RMSE de R$ 275,43 e R² de 0,883239. Esses resultados permitiram analisar o ajuste do modelo e compreender a importância das métricas na avaliação de modelos preditivos.
 
-O experimento será desenvolvido progressivamente, com código reproduzível, análise dos resultados e documentação das etapas utilizando Python, PyTorch e MkDocs.
+Além da implementação técnica, o estudo proporcionou a aplicação prática de conceitos de preparação de dados, normalização, tensores, treinamento de redes neurais e análise de resultados, consolidando conhecimentos em **Python, PyTorch e Deep Learning**.
+
+## Autor:
+
+**Daniel Martins França**
+
+
