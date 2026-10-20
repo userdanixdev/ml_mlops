@@ -1,3 +1,4 @@
+
 name: Deploy MkDocs
 
 on:
@@ -8,6 +9,7 @@ on:
 
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 
@@ -33,10 +35,20 @@ jobs:
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Gerar site
+      - name: Gerar site principal
         run: mkdocs build
 
-      - name: Upload do site
+      - name: Baixar documentação Vértice Seguros
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: deploy-vertice.yml
+          branch: artificial_neural_networks
+          name: vertice-seguros-site
+          path: site/seguros
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          if_no_artifact_found: fail
+
+      - name: Upload do site completo
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
