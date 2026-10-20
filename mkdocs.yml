@@ -17,3 +17,4 @@ nav:
   - Modelo de regressão: criacao_modelo.md
   - Avaliação do modelo: avaliacao_modelo.md
   - Previsões: previsoes.md
+  - Métricas: metricas.md
