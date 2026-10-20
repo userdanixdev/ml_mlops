@@ -1,8 +1,8 @@
 # Análise do Modelo:
 
-Esta etapa tem como objetivo interpretar os resultados obtidos pelo modelo de regressão desenvolvido com PyTorch, avaliando sua capacidade de estimar valores de seguros com base na idade dos clientes.
+A etapa final do estudo tem como objetivo interpretar os resultados obtidos pelo modelo de regressão desenvolvido com PyTorch, avaliando sua capacidade de estimar valores de seguros com base na idade dos clientes.
 
-O script f_avaliar_previsoes.py gera previsões para os 85 registros com valores conhecidos, converte as estimativas para a escala monetária original e compara os resultados com os valores reais. A partir dessa comparação, são calculadas as métricas MSE, RMSE, MAE e R², permitindo analisar o desempenho do modelo.
+O script *f_avaliar_previsoes.py* gera previsões para os 85 registros com valores conhecidos, converte as estimativas para a escala monetária original e compara os resultados com os valores reais. A partir dessa comparação, são calculadas as métricas MSE, RMSE, MAE e R², permitindo analisar o desempenho do modelo.
 
 ## Métricas de avaliação
 
@@ -35,9 +35,7 @@ O resultado de 0,883239 indica que o modelo explica aproximadamente 88,32% da va
 
 Esse resultado descreve o ajuste do modelo aos dados avaliados e não deve ser interpretado isoladamente como garantia de desempenho em novos dados.
 
-## Análise visual
-
-O gráfico de valores reais versus valores previstos permite observar a proximidade entre as estimativas e os valores originais.
+O gráfico de valores reais vs valores previstos permite observar a proximidade entre as estimativas e os valores originais.
 
 ![metricas_predicao](images/avaliacao_valores_reais_previstos.png)
 
@@ -59,18 +57,12 @@ Como esses registros participaram do treinamento, os resultados representam o aj
 
 Como os valores originais desses 15 registros eram desconhecidos, as estimativas não puderam ser comparadas com valores reais para calcular erros individuais.
 
-### Fluxo do processo
-
 A partir do mesmo modelo treinado, o fluxo segue por dois caminhos:
 
 * **Avaliação:** 85 registros conhecidos → previsões → comparação com valores reais → métricas de avaliação.
 * **Imputação de valores ausentes:** 15 registros sem valor de seguro → previsões → conversão para reais → arquivo com os valores estimados.
 
 Dessa forma, o estudo demonstra tanto a avaliação do ajuste do modelo quanto sua aplicação prática na estimativa de dados ausentes.
-
-## Limitações
-
-As métricas apresentadas medem o ajuste do modelo aos dados conhecidos, mas não fornecem uma avaliação independente de sua capacidade de generalização.
 
 ## Conclusão
 
@@ -86,7 +78,7 @@ Como próximos experimentos, serão consideradas as seguintes possibilidades:
 * **Implementar validação:** separar os registros conhecidos em conjuntos de treinamento e validação, comparando o desempenho em dados não utilizados diretamente no ajuste dos pesos.
 * **Analisar os erros individuais:** investigar se o modelo apresenta maior dificuldade em determinadas faixas etárias ou em valores de seguro mais elevados.
 
-Esses experimentos deverão ser comparados utilizando principalmente o MAE e o RMSE na escala monetária, além do R², priorizando as configurações que apresentarem melhor desempenho nos dados de validação.
+> Esses experimentos deverão ser comparados utilizando principalmente o MAE e o RMSE na escala monetária, além do R², priorizando as configurações que apresentarem melhor desempenho nos dados de validação.
 
-Por fim, as previsões dos 15 valores ausentes constituem a aplicação prática do modelo desenvolvido. 
+*Por fim, as previsões dos 15 valores ausentes constituem a aplicação prática do modelo desenvolvido.*
 
