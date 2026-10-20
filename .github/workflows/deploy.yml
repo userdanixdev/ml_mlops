@@ -42,6 +42,7 @@ jobs:
         uses: dawidd6/action-download-artifact@v6
         with:
           workflow: deploy-vertice.yml
+          workflow_conclusion: success
           branch: artificial_neural_networks
           name: vertice-seguros-site
           path: site/seguros
