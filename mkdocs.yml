@@ -1,0 +1,20 @@
+
+site_name: Machine Learning - Dataset Moon
+site_description: Estudos de classificação binária
+
+theme:
+  name: material
+  language: pt-BR
+
+markdown_extensions:
+  - attr_list
+extra_css:
+  - stylesheets/extra.css  
+
+nav:
+  - EDA - Análise exploratória de dados: index.md
+  - Preparação dos dados: pre_processamento_dados.md
+  - Modelo de regressão: criacao_modelo.md
+  - Avaliação do modelo: avaliacao_modelo.md
+  - Previsões: previsoes.md
+  - Métricas: metricas.md

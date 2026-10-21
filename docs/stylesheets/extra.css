@@ -1,0 +1,11 @@
+
+/* Justifica os parágrafos do conteúdo principal */
+.md-content p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Melhora o espaçamento entre os parágrafos */
+.md-content p {
+    margin-bottom: 1em;
+}
