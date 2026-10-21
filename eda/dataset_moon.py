@@ -1,8 +1,7 @@
 
-import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.datasets import make_moons
+from pathlib import Path
 
 # Reprodutibilidade
 SEED = 42
@@ -44,3 +43,9 @@ print(df.isna().sum())
 print("\nEstatísticas descritivas:")
 print(df.describe())
 
+# Definição do caminho:
+pasta_data = Path(__file__).resolve().parent.parent / "data"
+# Salvar o DataFrame em CSV:
+path_csv = pasta_data / "dataset_moon.csv"
+df.to_csv(path_csv, index=False)
+print(f"\n Dataset salvo em: {path_csv}")
