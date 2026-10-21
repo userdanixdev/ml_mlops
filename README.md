@@ -1,12 +1,128 @@
-## EDA: Análise exploratória de dados
+# 🌙 Machine Learning - Dataset Moon
 
-### O que é o Dataset Moon?
+![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Dataset%20Generation-F7931E?logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Data%20Visualization-11557C?logo=plotly&logoColor=white)
 
-O ```make_moons`` é uma função do módulo ```sklearn.datasets``` da biblioteca **Scikit-learn.** 
-Com essa função é possível gerar conjunto de dados sintéticos para estudar problemas de classificação binária não linear especialmente quando as classes possuem uma fronteira de decisão não linear.
+Projeto de estudo de **Machine Learning** utilizando o Dataset Moon, com foco na geração de dados sintéticos, análise exploratória de dados (EDA) e visualização da distribuição de classes para problemas de classificação binária não linear.
 
-O nome Moon vem do formato dos dados: duas regiões curvas que lembram duas meias-luas entrelaçadas. Cada ponto pertence a uma de duas classes. Diferentemente de um dataset real, os dados são gerados artificialmente.
+## 🎯 Objetivo
 
-A documentação oficial do make_moons(), do Scikit-learn, descreve a função como um gerador de duas classes de dados sintéticos em formato de duas meias-luas entrelaçadas, usado para testar algoritmos de classificação não linear.
+Explorar a estrutura de um conjunto de dados sintético, compreender suas características e visualizar a distribuição das classes antes de avançar para o treinamento de modelos de Machine Learning.
 
-*A documentação define X como uma matriz NumPy em formato (n_samples, 2), contendo as coordenadas de cada amostra. Assim também os vetores em NumPy em formato 0 e 1, contendo o rótulo de cada amostra.*
+## 📚 Conteúdo estudado
+
+- Geração de dados sintéticos com `make_moons()`, do Scikit-learn.
+- Estrutura de matrizes e vetores NumPy.
+- Identificação e nomeação de características.
+- Criação e inspeção de DataFrames com Pandas.
+- Análise Exploratória de Dados (EDA).
+- Gráficos de dispersão com Matplotlib.
+- Visualização das classes `0` e `1`.
+- Organização dos scripts Python e das imagens geradas.
+
+## 🧪 Dataset Moon
+
+A função `make_moons()` gera duas classes de dados em formato de meias-luas entrelaçadas, permitindo estudar problemas de classificação em que a fronteira de decisão não é linear.
+
+Configuração utilizada:
+
+```python
+X, y = make_moons(
+    n_samples=1000,
+    noise=0.2,
+    random_state=42
+)
+```
+
+| Parâmetro | Valor | Descrição |
+|---|---:|---|
+| `n_samples` | 1000 | Quantidade total de amostras |
+| `noise` | 0.2 | Intensidade do ruído gaussiano |
+| `random_state` | 42 | Reprodutibilidade da geração dos dados |
+
+A matriz `X` contém duas características numéricas, enquanto o vetor `y` contém os rótulos das classes.
+
+## 📊 Análise Exploratória de Dados (EDA)
+
+A análise exploratória permite compreender a estrutura e a distribuição dos dados antes da aplicação dos algoritmos de Machine Learning.
+
+### Distribuição das classes
+
+![Gráfico de dispersão do Dataset Moon](docs/images/scatter_dataset_moon.png)
+
+### Inspeção do DataFrame
+
+![Inspeção dos dados com Pandas](docs/images/eda_2_moon.png)
+
+### Análise dos dados
+
+![Visualização da análise exploratória](docs/images/EDA_moon.png)
+
+## 🛠️ Tecnologias utilizadas
+
+- **Python:** linguagem de programação.
+- **Scikit-learn:** geração do conjunto de dados sintético.
+- **NumPy:** manipulação de matrizes e vetores.
+- **Pandas:** organização e inspeção dos dados.
+- **Matplotlib:** criação de gráficos e visualizações.
+- **Git e GitHub:** versionamento e documentação do projeto.
+
+## 📁 Estrutura do projeto
+
+```text
+ml_mlops/
+├── eda/
+│   ├── dataset_moon.py
+│   └── analytics_dataset_moon.py
+├── docs/
+│   └── images/
+│       ├── scatter_dataset_moon.png
+│       ├── eda_2_moon.png
+│       └── EDA_moon.png
+├── .gitignore
+└── README.md
+```
+
+*Estrutura ilustrativa, considerando os scripts e arquivos de imagem utilizados até esta etapa.*
+
+## ▶️ Como executar
+
+### 1. Instale as dependências
+
+Com o ambiente virtual ativado:
+
+```bash
+pip install scikit-learn pandas matplotlib
+```
+
+### 2. Execute os scripts
+
+A partir da raiz do projeto:
+
+```bash
+python eda/dataset_moon.py
+python eda/analytics_dataset_moon.py
+```
+
+**Observação:** o segundo script importa o DataFrame do primeiro. Por isso, o módulo deve estar organizado conforme os imports utilizados no projeto.
+
+## 📖 Documentação oficial
+
+- [Scikit-learn — `make_moons()`](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_moons.html)
+- [Pandas — documentação oficial](https://pandas.pydata.org/docs/)
+- [Matplotlib — documentação oficial](https://matplotlib.org/stable/)
+
+## 🚀 Próximas etapas
+
+- [ ] Aprofundar a análise exploratória.
+- [ ] Analisar estatísticas descritivas e distribuição das classes.
+- [ ] Estudar a separabilidade das classes.
+- [ ] Treinar modelos de classificação.
+- [ ] Comparar fronteiras de decisão lineares e não lineares.
+- [ ] Avaliar o desempenho dos modelos com métricas de classificação.
+
+---
+
+**Projeto educacional de Machine Learning**, desenvolvido para consolidar conceitos de geração de dados, análise exploratória e classificação binária.
