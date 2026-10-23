@@ -63,8 +63,6 @@ A rede utiliza duas funções de ativação:
 - **ReLU:** aplicada às camadas ocultas, introduz não linearidade e permite que a rede aprenda relações mais complexas entre as características.
 - **Sigmoid:** aplicada à camada de saída, transforma o resultado em um valor entre 0 e 1, adequado à classificação binária.
 
-## 4. Estado atual do estudo
-
 O **MLP** de referência com duas camadas ocultas de 16 neurônios cada e uma camada de saída com um neurônio.
 
 O modelo ainda não foi compilado nem treinado. Portanto, seus pesos ainda não foram ajustados para aprender os padrões do Dataset Moon.

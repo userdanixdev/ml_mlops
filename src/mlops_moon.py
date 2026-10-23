@@ -3,8 +3,6 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import classification_report
-import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras import layers, regularizers
 from pathlib import Path
@@ -22,6 +20,13 @@ y = df["classe"]
 
 # Divisão de dados para treino e teste:
 X_train, X_test, y_train, y_test = train_test_split(X,y, test_size=0.2, random_state=42,stratify=y)
+
+print(f"Total de registros do DataFrame: {len(df)}")
+print(f"Dados de treino ( X_Train): {len(X_train)}")
+print(f"Dados de teste: ( X_test ){len(X_test)}")
+print(f"Dados de treino 'y_train' {len(y_train)}")
+print(f"Dados de test 'y_test' {len(y_test)}")
+
 
 # Padronização:
 scaler = StandardScaler()
