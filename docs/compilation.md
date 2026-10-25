@@ -1,5 +1,3 @@
-# Compilação do Modelo:
-
 ## Compilação do MLP com Keras
 
 A etapa de compilação configura os principais componentes necessários para o treinamento da rede neural. No Keras, o método `model.compile()` define o otimizador, a função de perda (*loss*) e as métricas utilizadas para acompanhar o desempenho do modelo.

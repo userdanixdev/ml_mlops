@@ -2,7 +2,7 @@
 
 O método `model.summary()` é utilizado no Keras para exibir um resumo da arquitetura de uma rede neural. Ele apresenta as camadas que compõem o modelo, o formato das saídas e a quantidade de parâmetros associados a cada camada.
 
-No projeto **Dataset Moon**, utilizamos esse recurso para verificar se a arquitetura da nossa **MLP (Multilayer Perceptron)** foi construída corretamente antes da compilação e do treinamento.
+No estudo com **Dataset Moon**, utilizamos esse recurso para verificar se a arquitetura da nossa **MLP (Multilayer Perceptron)** foi construída corretamente antes da compilação e do treinamento.
 
 ## 1. Summary:
 

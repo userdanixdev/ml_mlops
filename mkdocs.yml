@@ -13,8 +13,10 @@ extra_css:
 
 nav:
   - EDA - Análise exploratória de dados: index.md
-  - Preparação dos dados: pre_processamento_dados.md
-  - Modelo de regressão: criacao_modelo.md
+  - Arquitetura MLP: arquitetura_MLP.md
+  - Compilate Model: compilation.md
+  - Train Model: training.md
+  - Overfitting: overfitting.md
   - Avaliação do modelo: avaliacao_modelo.md
   - Previsões: previsoes.md
   - Métricas: metricas.md

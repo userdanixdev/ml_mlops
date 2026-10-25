@@ -1,7 +1,6 @@
-# RNA
-## MLP - Multilayer Perceptron
+# RNA - Redes Neurais Artificias
 
-### Relembrando um pouco sobre as Redes Neurais Artificiais (RNAs).
+### Relembrando um pouco
 
 São modelos de Machine Learning inspirados, de forma simplificada, no funcionamento dos neurônios biológicos. Elas aprendem padrões a partir de dados, ajustando parâmetros internos durante o treinamento para produzir previsões ou classificações.
 
@@ -36,6 +35,8 @@ Um tipo de rede recorrente projetado para aprender dependências em sequências 
 Arquiteturas que utilizam mecanismos de atenção para relacionar diferentes partes dos dados. São fundamentais em muitos modelos modernos de linguagem e também são utilizadas em imagens e outras modalidades.
 
 *Esses tipos não são necessariamente categorias totalmente isoladas. Por exemplo, uma arquitetura pode combinar convoluções com outras camadas neurais.*
+
+## MLP - Multilayer Perceptron
 
 O **MLP (Multilayer Perceptron)** é uma arquitetura de rede neural **feedforward**: as informações avançam da camada de entrada para as camadas ocultas e, por fim, para a saída.
 

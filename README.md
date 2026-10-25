@@ -7,9 +7,7 @@
 
 Projeto de estudo de **Machine Learning** utilizando o Dataset Moon, com foco na geração de dados sintéticos, análise exploratória de dados (EDA) e visualização da distribuição de classes para problemas de classificação binária não linear.
 
-## 🎯 Objetivo
-
-Explorar a estrutura de um conjunto de dados sintético, compreender suas características e visualizar a distribuição das classes antes de avançar para o treinamento de modelos de Machine Learning.
+A estrutura de um conjunto de dados sintético, compreender suas características e visualizar a distribuição das classes antes de avançar para o treinamento de modelos de Machine Learning.
 
 ## 📚 Conteúdo estudado
 
@@ -20,29 +18,11 @@ Explorar a estrutura de um conjunto de dados sintético, compreender suas caract
 - Análise Exploratória de Dados (EDA).
 - Gráficos de dispersão com Matplotlib.
 - Visualização das classes `0` e `1`.
-- Organização dos scripts Python e das imagens geradas.
+- Modularizado por funções com Python
 
 ## 🧪 Dataset Moon
 
 A função `make_moons()` gera duas classes de dados em formato de meias-luas entrelaçadas, permitindo estudar problemas de classificação em que a fronteira de decisão não é linear.
-
-Configuração utilizada:
-
-```python
-X, y = make_moons(
-    n_samples=1000,
-    noise=0.2,
-    random_state=42
-)
-```
-
-| Parâmetro | Valor | Descrição |
-|---|---:|---|
-| `n_samples` | 1000 | Quantidade total de amostras |
-| `noise` | 0.2 | Intensidade do ruído gaussiano |
-| `random_state` | 42 | Reprodutibilidade da geração dos dados |
-
-A matriz `X` contém duas características numéricas, enquanto o vetor `y` contém os rótulos das classes.
 
 ## 📊 Análise Exploratória de Dados (EDA)
 
@@ -114,15 +94,5 @@ python eda/analytics_dataset_moon.py
 - [Pandas — documentação oficial](https://pandas.pydata.org/docs/)
 - [Matplotlib — documentação oficial](https://matplotlib.org/stable/)
 
-## 🚀 Próximas etapas
 
-- [ ] Aprofundar a análise exploratória.
-- [ ] Analisar estatísticas descritivas e distribuição das classes.
-- [ ] Estudar a separabilidade das classes.
-- [ ] Treinar modelos de classificação.
-- [ ] Comparar fronteiras de decisão lineares e não lineares.
-- [ ] Avaliar o desempenho dos modelos com métricas de classificação.
-
----
-
-**Projeto educacional de Machine Learning**, desenvolvido para consolidar conceitos de geração de dados, análise exploratória e classificação binária.
+**Estudos de Machine Learning**, desenvolvido para consolidar conceitos de geração de dados, análise exploratória e classificação binária.

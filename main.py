@@ -3,7 +3,8 @@ from src.moon.b_model import criar_modelo
 from src.moon.c_compile import compilar_modelo
 from src.moon.d_train import treinar_modelo
 from src.moon.e_evaluate import avaliar_modelo
-from src.moon.plots import plotar_historico
+from src.moon.plots_loss_accuracy import plotar_historico
+from src.moon.plots_overfitting import plotar_overfitting
 
 # 1. Carregar os dados
 df = carregar_dados()
@@ -23,6 +24,10 @@ history = treinar_modelo(model, X_train, y_train)
 
 # Gerar os gráficos do treinamento
 plotar_historico(history)
+
+# Plotar gráficos de possíveis overfitting:
+plotar_overfitting(history)
+
 
 # 6. Avaliar com os dados de teste
 #resultado = avaliar_modelo(model, X_test, y_test)
