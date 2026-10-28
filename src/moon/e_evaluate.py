@@ -14,7 +14,7 @@ def avaliar_modelo(model, X_test, y_test):
     for metrica, valor in resultado.items():
         print(f"{metrica}: {valor:.4f}")
 
-    # Gerar as probabilidades previstas pelo modelo>]
+    # Gerar as probabilidades previstas pelo modelo
     y_pred_prob = model.predict(X_test, verbose = 0)
     # Converter as probabilidades em classes 0 ou 1
     y_pred = (y_pred_prob >= 0.5).astype(int).ravel()
@@ -22,9 +22,7 @@ def avaliar_modelo(model, X_test, y_test):
     print("\nRelatório de classificação:")
     print(classification_report(y_test, y_pred))
 
-    # Retornar as métricas da avaliação
-
-    return resultado
+    return resultado, y_pred, y_pred_prob
 
 
 # model.evaluate(): calcula a perda e as métricas configuradas na compilação.

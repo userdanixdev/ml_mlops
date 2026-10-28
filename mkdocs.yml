@@ -17,6 +17,6 @@ nav:
   - Compilate Model: compilation.md
   - Train Model: training.md
   - Overfitting: overfitting.md
-  - Avaliação do modelo: avaliacao_modelo.md
-  - Previsões: previsoes.md
-  - Métricas: metricas.md
+  - Avaliação do modelo: evaluate.md
+  - Analytics: metricas.md
+  

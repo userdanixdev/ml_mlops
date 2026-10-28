@@ -24,7 +24,7 @@ def treinar_modelo(model, X_train, y_train):
     
     # Exibição do treinamento:
     print("\n ======= Resumo do Treinamento ======")
-    print(f" Total de épocas executadas: {total_epochs}")
+    print(f"Total de épocas executadas: {total_epochs}")
     print(f"Melhor Época: {melhor_epoch}")
     print(f"Menor val_loss: {menor_val_loss:.4f}")
     print(f"Loss de treino na melhor época: {loss_treino:.4f}")
@@ -38,17 +38,24 @@ def treinar_modelo(model, X_train, y_train):
         and melhor_epoch < total_epochs
         and loss_validacao[-1] > menor_val_loss
     )
-    print("\n Análise de overfitting: ")
-    if sinais_overfitting:
-        print(
-            " Possíveis sinais de overfitting: "
-            " a perda de validação aumentou após atingir seu mínimo."
-        )
-    else:
-        print(
-            " A regra simples utilizada não identificou"
-            " sinais claros de overfitting."
-        )        
-    print(f"{'*'*30}\n")        
+    # Exibir análise de overfitting
+    largura = 60
 
+    print("\n" + "=" * largura)
+    print("ANÁLISE DE OVERFITTING".center(largura))
+    print("=" * largura)
+
+    if sinais_overfitting:
+        print("Status: POSSÍVEIS SINAIS IDENTIFICADOS")
+        print("-" * largura)
+        print("A perda de validação aumentou após atingir")
+        print("seu menor valor durante o treinamento.")
+    else:
+        print("Status: NENHUM SINAL CLARO IDENTIFICADO")
+        print("-" * largura)
+        print("A regra utilizada não identificou sinais")
+        print("claros de overfitting.")
+
+    print("=" * largura + "\n")    
+        
     return history

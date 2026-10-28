@@ -103,17 +103,26 @@ A curva laranja **(validação)** apresenta a menor perda, chegando a aproximada
 
 ![plot](images/accuracy_treino_validacao.png)
 
-Nesse outro exemplo, a maior acurácia ocorre na validação, chegando a aproximadamento 0,913(91,3%) a partir da **13° época**, mantendo-se esse nível até a 20º época.
+No gráfico atual, a maior acurácia de validação é de aproximadamente **91,9%**, alcançada na **7ª época** e novamente entre a **9ª e a 15ª épocas**. A partir da 16ª época, a acurácia de validação diminui ligeiramente e permanece em aproximadamente 91,2% até a 20ª época.
 
-- **Acurácia de Treino (azul)**: aproximadamente 88,1% na 20º época.
-- **Acurácia de validação (laranja)**: aproximadamente 91,3% da 13º à 20º época.
+- **Acurácia de treino (azul):** aproximadamente 86,1% na 20ª época.
+- **Acurácia de validação (laranja):** aproximadamente 91,2% na 20ª época, após atingir cerca de 91,9% em épocas anteriores.
 
-> **Observação importante:** A acurácia representa a proporção de previsões classificadas corretamente. Por exemplo, uma acurácia de 91,3% significa que, em média, cerca de 91 de cada 100 exemplos de validação foram classificados corretamente.
+> **Observação importante:** a acurácia representa a proporção de previsões classificadas corretamente. Por exemplo, uma acurácia de 91,2% significa que aproximadamente 91 de cada 100 exemplos de validação foram classificados corretamente.
 
-Observe que a acurácia de validação estabiliza na 13ª época, enquanto a de treino continua aumentando lentamente. Isso indica que o desempenho na validação deixou de melhorar de forma perceptível. Vale investigar se treinar por mais épocas traria algum benefício, embora esse gráfico, isoladamente, não comprove overfitting.
+### Interpretação dos resultados
 
-> *Relacionando com o gráfico de perda (binary_crossentropy): a acurácia mede quantas classificações estão corretas; a perda também considera o grau de confiança das probabilidades previstas. Por isso, a acurácia pode ficar estável enquanto a perda continua diminuindo.*
+A acurácia de treinamento apresenta uma tendência geral de crescimento, passando de aproximadamente 82,0% na primeira época para 86,1% na última. Isso indica que o modelo está melhorando gradualmente sua capacidade de classificar os exemplos utilizados no treinamento.
 
+A acurácia de validação, por sua vez, começa em aproximadamente 91,2%, apresenta algumas oscilações e atinge seu maior patamar por volta da 7ª época. Depois, permanece próxima de 91,9% durante várias épocas, antes de cair ligeiramente nas últimas cinco.
+
+Esse comportamento indica que o desempenho de validação atingiu um patamar relativamente estável, sem apresentar melhorias contínuas ao longo de todo o treinamento.
+
+### Existe overfitting nesse gráfico?
+
+A diferença entre as curvas merece atenção: a acurácia de validação permanece superior à acurácia de treinamento durante todas as 20 épocas. Entretanto, **essa diferença, isoladamente, não comprova a existência de overfitting**.
+
+A acurácia de validação apresenta uma pequena redução nas últimas épocas, enquanto a acurácia de treinamento continua aumentando. Esse comportamento pode justificar uma investigação adicional, mas é necessário analisar também a evolução da `loss` e da `val_loss` para verificar se há sinais mais claros de sobreajuste.
 
 ### Outros parâmetros:
 
