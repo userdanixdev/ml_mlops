@@ -8,7 +8,7 @@
 
 # 🌙 Machine Learning - Dataset Moon
 
-Estudo de **Machine Learning com redes neurais artificiais**, desenvolvido a partir do conjunto de dados sintético *Dataset Moon*, com foco em classificação binária de padrões não lineares.
+Estudo de **Machine Learning com redes neurais artificiais**, desenvolvido a partir do conjunto de dados sintéticos *Dataset Moon*, com foco em classificação binária de padrões não lineares.
 
 O estudo abrange todo o fluxo de desenvolvimento de um modelo de aprendizagem de máquina: geração e exploração dos dados, pré-processamento, construção da arquitetura neural, compilação, treinamento e avaliação.
 
@@ -17,8 +17,6 @@ Também são realizados experimentos progressivos com técnicas de regularizaç�
 O objetivo é investigar como uma rede neural aprende padrões não lineares, identificar fatores que influenciam sua capacidade de generalização e avaliar estratégias para aprimorar a classificação.
 
 ---
-
-## 🧪 Dataset Moon
 
 O *Dataset Moon* é um conjunto de dados sintético gerado pela função `make_moons()`, disponibilizada pelo Scikit-learn.
 
@@ -34,7 +32,7 @@ Sua estrutura apresenta duas classes distribuídas em formatos de meias-luas ent
 | Ruído (`noise`) | 0.20 |
 | Semente (`random_state`) | 42 |
 
-Essa característica torna o conjunto adequado para investigar como redes neurais aprendem relações complexas entre variáveis e constroem fronteiras de decisão.
+> Essa característica torna o conjunto adequado para investigar como redes neurais aprendem relações complexas entre variáveis e constroem fronteiras de decisão.
 
 ## 📊 Análise Exploratória de Dados (EDA)
 
@@ -194,7 +192,7 @@ Os experimentos podem ser executados individualmente a partir da raiz do reposit
 
 Consulte a documentação do projeto para conhecer a sequência de execução, os módulos e as configurações utilizadas em cada experimento.
 
-## 📚 10. Referências e documentação oficial
+## 📚 Referências e documentação oficial
 
 - [Scikit-learn — make_moons()](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_moons.html)
 - [TensorFlow — Documentação oficial](https://www.tensorflow.org/)
@@ -205,6 +203,6 @@ Consulte a documentação do projeto para conhecer a sequência de execução, o
 
 ---
 
-**Machine Learning — Dataset Moon**
+**Machine Learning - Dataset Moon**
 
-Estudo desenvolvido para explorar, implementar e avaliar redes neurais artificiais em problemas de classificação binária não linear, consolidando conceitos de análise de dados, aprendizagem, regularização e generalização.
+*Estudo desenvolvido para explorar, implementar e avaliar redes neurais artificiais em problemas de classificação binária não linear, consolidando conceitos de análise de dados, aprendizagem, regularização e generalização.*
