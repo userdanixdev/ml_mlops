@@ -1,0 +1,37 @@
+
+name: Build Dataset Moon
+
+on:
+  push:
+    branches:
+      - ml_dataset_moon
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Instalar MkDocs Material
+        run: pip install mkdocs-material
+
+      - name: Gerar documentação
+        run: mkdocs build
+
+      - name: Armazenar documentação Moon
+        uses: actions/upload-artifact@v4
+        with:
+          name: moon-dataset-site
+          path: site/
+          retention-days: 7
