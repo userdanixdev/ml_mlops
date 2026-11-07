@@ -54,7 +54,7 @@ jobs:
       - name: Baixar documentação Dataset Moon
         uses: dawidd6/action-download-artifact@v6
         with:
-          workflow: deploy-moon.yml
+          workflow: deploy_moon.yml
           workflow_conclusion: success
           branch: ml_dataset_moon
           name: moon-dataset-site
