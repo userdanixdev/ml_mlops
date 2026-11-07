@@ -206,3 +206,7 @@ Consulte a documentação do projeto para conhecer a sequência de execução, o
 **Machine Learning - Dataset Moon**
 
 *Estudo desenvolvido para explorar, implementar e avaliar redes neurais artificiais em problemas de classificação binária não linear, consolidando conceitos de análise de dados, aprendizagem, regularização e generalização.*
+
+🔗 Documentação do projeto:
+
+https://userdanixdev.github.io/ml_mlops/moon/
