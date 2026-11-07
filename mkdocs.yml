@@ -19,4 +19,5 @@ nav:
   - Overfitting: overfitting.md
   - Avaliação do modelo: evaluate.md
   - Analytics: metricas.md
+  - Regulate: regularization.md
   
