@@ -194,12 +194,12 @@ Consulte a documentação do projeto para conhecer a sequência de execução, o
 
 ## 📚 Referências e documentação oficial
 
-- [Scikit-learn — make_moons()](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_moons.html)
-- [TensorFlow — Documentação oficial](https://www.tensorflow.org/)
-- [Keras — Documentação oficial](https://keras.io/)
-- [NumPy — Documentação oficial](https://numpy.org/doc/)
-- [Pandas — Documentação oficial](https://pandas.pydata.org/docs/)
-- [Matplotlib — Documentação oficial](https://matplotlib.org/stable/)
+- [Scikit-learn - make_moons()](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.make_moons.html)
+- [TensorFlow - Documentação oficial](https://www.tensorflow.org/)
+- [Keras - Documentação oficial](https://keras.io/)
+- [NumPy - Documentação oficial](https://numpy.org/doc/)
+- [Pandas - Documentação oficial](https://pandas.pydata.org/docs/)
+- [Matplotlib - Documentação oficial](https://matplotlib.org/stable/)
 
 ---
 
