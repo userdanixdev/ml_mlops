@@ -158,3 +158,7 @@ Neste estudo, foi possível observar três aspectos importantes:
 > O experimento também evidencia a importância de analisar diferentes métricas, como Accuracy, Precision, Recall, F1-score e AUC, em vez de considerar somente a acurácia.
 
 **Conclusão geral**: a combinação de uma arquitetura adequada, técnicas de regularização e um limiar de classificação bem selecionado pode proporcionar melhores resultados na classificação de dados não linearmente separáveis, como o Dataset Moon.
+
+## Acesse o repositório:
+
+[Documentação técnica](https://github.com/userdanixdev/ml_mlops/tree/ml_dataset_moon){ .md-button }
