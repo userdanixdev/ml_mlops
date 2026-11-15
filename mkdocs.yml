@@ -1,0 +1,55 @@
+site_name: Project Pipeline MLops - Dataset Breast Cancer Wisconsin
+site_description: Estudos de Machine Learning Operations
+
+theme:
+  name: material
+  language: pt-BR
+
+markdown_extensions:
+  - attr_list
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+extra_css:
+  - stylesheets/extra.css  
+
+nav:
+  - Início: index.md
+
+  - 1. Preparação do Ambiente:
+      - Configuração do ambiente: environment.md
+      - Dependências: dependencies.md
+
+  - 2. Preparação e Análise dos Dados:
+      - Visão geral do dataset: dataset_overview.md
+      - Exploração dos dados: data_exploration.md
+      - Pré-processamento: preprocessing.md
+
+  - 3. Treinamento dos Modelos:
+      - Baseline - Regressão Logística: baseline.md
+      - Random Forest: random_forest.md
+      - Avaliação dos modelos: model_evaluation.md
+
+  - 4. Otimização e Rastreamento:
+      - Otimização de hiperparâmetros: hyperparameter_tuning.md
+      - MLflow Tracking: mlflow_tracking.md
+
+  - 5. Registro do Modelo:
+      - Model Registry: model_registry.md
+
+  - 6. Monitoramento:
+      - Data Drift: data_drift.md
+      - Métricas de produção: production_metrics.md
+
+  - 7. API de Inferência:
+      - FastAPI: api.md
+      - Endpoint de predição: prediction_endpoint.md
+
+  - 8. Containerização:
+      - Docker: docker.md
+
+  - 9. Orquestração:
+      - Kubernetes: kubernetes.md
+      - Deployment e Service: deployment.md
+      - Escalabilidade: scalability.md

@@ -1,27 +1,40 @@
+![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
+![Poetry](https://img.shields.io/badge/Poetry-Dependency%20Management-60A5FA?logo=poetry&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-Machine%20Learning-F7931E?logo=scikitlearn&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy&logoColor=white)
+![MLflow](https://img.shields.io/badge/MLflow-Experiment%20Tracking-0194E2?logo=mlflow&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes&logoColor=white)
+![MkDocs](https://img.shields.io/badge/MkDocs-Documentation-526CFE?logo=markdown&logoColor=white)
+![Pytest](https://img.shields.io/badge/Pytest-Testing-0A9EDC?logo=pytest&logoColor=white)
+![Ruff](https://img.shields.io/badge/Ruff-Code%20Quality-D7FF64?logo=ruff&logoColor=black)
+
 # Projeto MLops - Breast Cancer Wisconsin
 
 ## Visão Geral
 
 Este projeto tem como objetivo desenvolver um pipeline completo de Machine Learning, aplicando práticas de MLOps desde a preparação dos dados até a disponibilização e o monitoramento de um modelo em ambiente de produção.
 
-Será utilizado o dataset Breast Cancer Wisconsin, disponibilizado pelo Scikit-learn, para desenvolver modelos capazes de classificar tumores como benignos ou malignos.
+Será utilizado o dataset ```Breast Cancer Wisconsin```, disponibilizado pelo Scikit-learn, para desenvolver modelos capazes de classificar tumores como benignos ou malignos.
 
-O projeto utilizará Python e ferramentas voltadas à análise de dados, treinamento, rastreamento de experimentos, disponibilização de modelos e infraestrutura.
+O projeto utilizará `Python` e ferramentas voltadas à análise de dados, treinamento, rastreamento de experimentos, disponibilização de modelos e infraestrutura.
 
 ## Tecnologias e Ferramentas
 
-- Python: linguagem utilizada no desenvolvimento.
-- Poetry: gerenciamento de dependências e ambiente virtual.
-- Scikit-learn: preparação dos dados, treinamento e avaliação dos modelos.
-- Pandas e NumPy: manipulação e operações numéricas.
-- Matplotlib e Seaborn: visualização de dados.
-- MLflow: rastreamento de experimentos e gerenciamento de modelos.
-- FastAPI: desenvolvimento da API de inferência.
-- Pydantic: validação dos dados de entrada.
-Uvicorn: servidor ASGI para execução da API.
-- Docker: containerização da aplicação.
-- Kubernetes: orquestração dos containers.
-- Pytest, HTTPX e Ruff: testes automatizados e qualidade do código.
+- **Python**: linguagem utilizada no desenvolvimento.
+- **Poetry**: gerenciamento de dependências e ambiente virtual.
+- **Scikit-learn**: preparação dos dados, treinamento e avaliação dos modelos.
+- **Pandas** : manipulação e operações numéricas.
+- **Matplotlib** e **Seaborn**: visualização de dados.
+- **MLflow**: rastreamento de experimentos e gerenciamento de modelos.
+- **FastAPI**: desenvolvimento da API de inferência.
+- **Pydantic**: validação dos dados de entrada.
+- **Uvicorn**: servidor ASGI para execução da API.
+- **Docker**: containerização da aplicação.
+- **Kubernetes**: orquestração dos containers.
+- **Pytest, HTTPX e Ruff**: testes automatizados e qualidade do código.
 
 ### Com Poetry, teremos:
 
@@ -88,15 +101,15 @@ O Poetry foi utilizado para gerenciar as bibliotecas do projeto, separando as de
 | HTTPX | Testes de requisições e endpoints da API |
 | Ruff | Análise estática e padronização do código |
 
-### Comandos utilizados
+### Comandos utilitários:
 
-Instalação das dependências principais:
+- Instalação das dependências principais:
 
 ```bash
 poetry add numpy pandas scikit-learn matplotlib seaborn mlflow fastapi "uvicorn[standard]" pydantic
 ```
 
-Instalação das dependências de desenvolvimento:
+- Instalação das dependências de desenvolvimento:
 
 ```bash
 poetry add --group dev pytest httpx ruff
@@ -126,6 +139,7 @@ O que vamos desenvolver
    Registrar as análises, decisões e resultados no projeto.
 
 
+## Arquitetura:
 
 ```
 ml_mlops/
