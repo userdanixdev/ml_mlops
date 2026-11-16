@@ -17,12 +17,10 @@ extra_css:
 nav:
   - Início: index.md
 
-  - 1. Preparação do Ambiente:
-      - Configuração do ambiente: environment.md
-      - Dependências: dependencies.md
-
+  - 1. Preparação do Ambiente: environment.md
+      
   - 2. Preparação e Análise dos Dados:
-      - Visão geral do dataset: data_exploration.md
+      - Visão geral: data_exploration.md
       - Exploração dos dados: dataset_overview.md
       - Pré-processamento: preprocessing.md
 

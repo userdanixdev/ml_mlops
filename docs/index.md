@@ -6,19 +6,17 @@ A proposta é combinar fundamentos conceituais com experimentação e implementa
 
 Os estudos estão organizados em diferentes etapas de evolução, utilizando conjuntos de dados sintéticos e reais, algoritmos tradicionais de Machine Learning e redes neurais artificiais.
 
-Mais do que aplicar algoritmos, o objetivo é compreender como os modelos aprendem, como seus resultados podem ser avaliados e quais práticas contribuem para desenvolver soluções mais confiáveis e organizadas.
-
 O portfólio foi desenvolvido progressivamente, explorando diferentes problemas e abordagens de aprendizado de máquina.
 
 ### 1. Classificação binária de desempenho acadêmico
 
-Estudo introdutório de classificação binária utilizando PyTorch, com geração de dados sintéticos para prever resultados acadêmicos.
+Estudo introdutório de classificação binária utilizando `PyTorch`, com geração de dados sintéticos para prever resultados acadêmicos.
 
 Foram explorados conceitos de preparação dos dados, construção e treinamento de modelos, inferência e avaliação por métricas de classificação.
 
 **Principais conceitos:** classificação binária, tensores, função de perda, otimização, inferência e matriz de confusão.
 
-[Consultar estudo no GitHub](https://userdanixdev.github.io/ml_mlops/)
+[Consultar estudo](https://userdanixdev.github.io/ml_mlops/){ .md-button }
 
 ### 2. Classificação de padrões não lineares - Dataset Moon
 
@@ -28,7 +26,7 @@ O estudo aprofundou conceitos de arquitetura neural, treinamento, regularizaçã
 
 **Principais conceitos:** redes neurais, funções de ativação, normalização, Dropout, Batch Normalization, regularização L2, overfitting, AUC e threshold de classificação.
 
-[Consultar estudo no GitHub](https://userdanixdev.github.io/ml_mlops/moon/)
+[Consultar estudo](https://userdanixdev.github.io/ml_mlops/moon/){ .md-button }
 
 ### 3. Redes neurais artificiais aplicadas à regressão
 
@@ -38,7 +36,7 @@ O experimento investiga a influência das funções de ativação e a capacidade
 
 **Principais conceitos:** regressão, pesos e bias, funções de ativação, normalização, treinamento, MAE, RMSE e R².
 
-[Consultar estudo no GitHub](https://userdanixdev.github.io/ml_mlops/seguros/)
+[Consultar estudo](https://userdanixdev.github.io/ml_mlops/seguros/){ .md-button }
 
 ## Projeto MLops - Breast Cancer Wisconsin
 
@@ -71,4 +69,4 @@ A partir dos fundamentos de classificação e regressão, passando pela constru�
 
 **Autor:** Daniel Martins França
 
-**Repositório:** [github.com/userdanixdev/ml_mlops](https://github.com/userdanixdev/ml_mlops)
+**Repositório:** [github.com/userdanixdev/ml_mlops](https://github.com/userdanixdev/ml_mlops/tree/project_mlops){ .md-button }
