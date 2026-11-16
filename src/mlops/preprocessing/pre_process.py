@@ -22,7 +22,7 @@ def check_transformations(X):
 def train_test_split_data(X,y,test_size=0.2, random_state=42):
     return train_test_split(X,y,test_size=test_size, random_state=random_state,stratify=y)
 
-def generate_preprocessing_report(X,y,X_train,X_test,y_train,Y_test)    :
+def generate_preprocessing_report(X,y,X_train,X_test,y_train,y_test)    :
     report_path = Path("reports/preprocessing_report.md")
     report_path.parent.mkdir(parents=True,exist_ok=True)
 
