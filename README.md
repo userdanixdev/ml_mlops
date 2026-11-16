@@ -166,4 +166,6 @@ Além da implementação técnica, o estudo proporcionou a aplicação prática 
 
 **Daniel Martins França**
 
+Acesse o estudo também por aqui:  https://userdanixdev.github.io/ml_mlops/seguros/
+
 
