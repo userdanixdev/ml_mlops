@@ -22,8 +22,8 @@ nav:
       - Dependências: dependencies.md
 
   - 2. Preparação e Análise dos Dados:
-      - Visão geral do dataset: dataset_overview.md
-      - Exploração dos dados: data_exploration.md
+      - Visão geral do dataset: data_exploration.md
+      - Exploração dos dados: dataset_overview.md
       - Pré-processamento: preprocessing.md
 
   - 3. Treinamento dos Modelos:
