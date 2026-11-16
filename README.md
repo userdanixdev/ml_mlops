@@ -195,15 +195,14 @@ O desenvolvimento deste estudo permitiu praticar conceitos fundamentais de:
 * Avaliação de modelos por meio de métricas e matriz de confusão.
 * Organização de um fluxo de Machine Learning em múltiplos scripts Python.
 
-## Conclusão
-
 O estudo demonstra a implementação de um fluxo introdutório de classificação binária com Python e PyTorch, desde a geração dos dados até a avaliação do modelo.
-
 A experiência consolida conceitos essenciais de preparação de dados, treinamento, inferência e validação, servindo como base para estudos posteriores em Machine Learning e Deep Learning.
 
 ## Autor:
 
 > Daniel Martins França
+>
+> Link do estudo: https://userdanixdev.github.io/ml_mlops/
 
 
 
