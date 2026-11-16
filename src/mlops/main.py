@@ -3,7 +3,8 @@ from mlops.data.load_dataset import load_dataset
 from mlops.preprocessing.pre_process import (
     separate_features_target,
     check_transformations,
-    train_test_split_data
+    train_test_split_data,
+    generate_preprocessing_report
 )
 
 
@@ -19,6 +20,9 @@ def main():
 
     # Divisão entre treino e teste
     X_train, X_test, y_train, y_test = train_test_split_data(X, y)
+    generate_preprocessing_report(
+    X, y, X_train, X_test, y_train, y_test
+)
 
     print("\nDimensões dos conjuntos")
     print("-" * 40)
