@@ -36,4 +36,4 @@ Com base nos resultados registrados, os modelos apresentaram os seguintes valore
 
 Caso queira verificar o código completo acesse aqui:
 
-[Plot dos gráficos](){ .md-button}
+[Plot dos gráficos](https://github.com/userdanixdev/ml_mlops/tree/project_mlops/src/mlops/visualization){ .md-button}
