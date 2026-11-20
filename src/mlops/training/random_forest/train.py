@@ -5,6 +5,9 @@ from sklearn.metrics import (
     confusion_matrix
 )
 from utils.save_model import save_model
+from utils.save_metrics import save_metrics
+import pandas as pd
+
 
 def train_model(X_train,y_train):
     model = RandomForestClassifier(
@@ -16,7 +19,7 @@ def train_model(X_train,y_train):
         n_jobs=1
     )
     model.fit(X_train,y_train)
-    save_model(model)
+    save_model(model,"model_2_logistic_regression")
     return model
 
 def evaluate_model(model,X_test,y_test):
@@ -25,12 +28,19 @@ def evaluate_model(model,X_test,y_test):
     accuracy = accuracy_score(y_test, predictions)
     matrix = confusion_matrix(y_test, predictions)
 
-    report = classification_report(
-        y_test,
-        predictions,
-        target_names=["malignant","benign"],
-        zero_division=0
-    )
+    report_dict = classification_report(
+    y_test,
+    predictions,
+    target_names=["malignant", "benign"],
+    zero_division=0,
+    output_dict=True
+)
+
+    save_metrics(
+        model_name="Random Forest",
+        accuracy=accuracy,
+        classification_metrics=report_dict
+)
     print("\nAvaliação do modelo")
     print("*"*40)
     print(f"Accuracy:{accuracy:.4f}")
@@ -39,7 +49,7 @@ def evaluate_model(model,X_test,y_test):
     print(matrix)
 
     print("\nRelatório de classificação:")
-    print(report)
+    print(pd.DataFrame(report_dict).T)
 
 # - train_model(): recebe os dados de treinamento, instancia o Random Forest, executa o fit() e devolve o modelo treinado.
 # - evaluate_model(): recebe o modelo treinado e os dados de teste, realiza previsões e calcula as métricas.

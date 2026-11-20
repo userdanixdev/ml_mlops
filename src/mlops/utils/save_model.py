@@ -1,5 +1,6 @@
 import joblib
 from pathlib import Path
+import pandas as pd
 
 def save_model(model,model_name):
     model_path = Path("models") / f"{model_name}.joblib"
@@ -8,3 +9,5 @@ def save_model(model,model_name):
     joblib.dump(model,model_path)
 
     print(f"\nModelo salvo em: {model_path}")
+
+
