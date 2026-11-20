@@ -16,7 +16,7 @@ Foram explorados conceitos de preparação dos dados, construção e treinamento
 
 **Principais conceitos:** classificação binária, tensores, função de perda, otimização, inferência e matriz de confusão.
 
-[Consultar estudo](https://userdanixdev.github.io/ml_mlops/){ .md-button }
+[Consultar estudo ML - Desempenho Acadêmico](https://userdanixdev.github.io/ml_mlops/){ .md-button }
 
 ### 2. Classificação de padrões não lineares - Dataset Moon
 
@@ -26,7 +26,7 @@ O estudo aprofundou conceitos de arquitetura neural, treinamento, regularizaçã
 
 **Principais conceitos:** redes neurais, funções de ativação, normalização, Dropout, Batch Normalization, regularização L2, overfitting, AUC e threshold de classificação.
 
-[Consultar estudo](https://userdanixdev.github.io/ml_mlops/moon/){ .md-button }
+[Consultar estudo - Dataset Moon](https://userdanixdev.github.io/ml_mlops/moon/){ .md-button }
 
 ### 3. Redes neurais artificiais aplicadas à regressão
 
@@ -36,7 +36,7 @@ O experimento investiga a influência das funções de ativação e a capacidade
 
 **Principais conceitos:** regressão, pesos e bias, funções de ativação, normalização, treinamento, MAE, RMSE e R².
 
-[Consultar estudo](https://userdanixdev.github.io/ml_mlops/seguros/){ .md-button }
+[Consultar estudo - Seguros Automotivos](https://userdanixdev.github.io/ml_mlops/seguros/){ .md-button }
 
 ## Projeto MLops - Breast Cancer Wisconsin
 

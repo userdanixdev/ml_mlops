@@ -7,6 +7,11 @@ from mlops.preprocessing.pre_process import (
     generate_preprocessing_report
 )
 
+from mlops.training.train import (
+    train_model,
+    evaluate_model
+)
+
 
 def main():
     # Carregamento
@@ -30,6 +35,11 @@ def main():
     print("X_test:", X_test.shape)
     print("y_train:", y_train.shape)
     print("y_test:", y_test.shape)
+
+    # treinamento
+    model = train_model(X_train,y_train)
+    # Avaliação
+    evaluate_model(model,X_test,y_test)
 
 
 if __name__ == "__main__":

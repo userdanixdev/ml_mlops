@@ -45,3 +45,7 @@ poetry add --group dev pytest httpx ruff
 ### Considerações
 
 O Poetry mantém as configurações e versões das dependências nos arquivos `pyproject.toml` e `poetry.lock`, contribuindo para a organização e a reprodutibilidade do ambiente de desenvolvimento.
+
+* Acesse o repositório completo aqui:
+
+[github.com/userdanixdev/ml_mlops](https://github.com/userdanixdev/ml_mlops/tree/project_mlops){ .md-button }

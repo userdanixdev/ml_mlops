@@ -136,4 +136,4 @@ Portanto:
 
 Os scripts estão modularizados e podem ser conferidos aqui:
 
-[Documentação Técnica](https://github.com/userdanixdev/ml_mlops/blob/project_mlops/src/mlops/data/load_dataset.py){.md-button }
+[Documentação Técnica - Load ](https://github.com/userdanixdev/ml_mlops/blob/project_mlops/src/mlops/data/load_dataset.py){.md-button }

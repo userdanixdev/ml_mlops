@@ -22,11 +22,10 @@ nav:
   - 2. Preparação e Análise dos Dados:
       - Visão geral: data_exploration.md
       - Exploração dos dados: dataset_overview.md
-      - Pré-processamento: preprocessing.md
+      - Pré-processamento: preprocessing_report.md
 
   - 3. Treinamento dos Modelos:
-      - Baseline - Regressão Logística: baseline.md
-      - Random Forest: random_forest.md
+      - Baseline - Random Forest: random_forest.md
       - Avaliação dos modelos: model_evaluation.md
 
   - 4. Otimização e Rastreamento:
