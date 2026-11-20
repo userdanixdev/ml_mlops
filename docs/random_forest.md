@@ -129,3 +129,7 @@ Esse resultado representa uma referência inicial para futuras experimentações
 Como próxima etapa, será implementada a persistência do modelo treinado, permitindo armazená-lo e recuperá-lo posteriormente sem a necessidade de executar novamente o treinamento.
 
 Após essa etapa, será realizada a integração com o **MLflow Tracking**, possibilitando registrar parâmetros, métricas e artefatos de cada execução, acompanhando a evolução dos experimentos ao longo do projeto.
+
+Para verificar os códigos completos, acesse o repositório:
+
+[Treinamento - Baseline - Random Forest](https://github.com/userdanixdev/ml_mlops/tree/project_mlops){ .md-button}
