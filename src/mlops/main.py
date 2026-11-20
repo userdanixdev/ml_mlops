@@ -7,7 +7,7 @@ from mlops.preprocessing.pre_process import (
     generate_preprocessing_report
 )
 
-from mlops.training.train import (
+from mlops.training.random_forest.train import (
     train_model,
     evaluate_model
 )

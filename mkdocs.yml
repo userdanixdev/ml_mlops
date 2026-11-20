@@ -26,6 +26,7 @@ nav:
 
   - 3. Treinamento dos Modelos:
       - Baseline - Random Forest: random_forest.md
+      - Logistic Regression: logistic_regression.md
       - Avaliação dos modelos: model_evaluation.md
 
   - 4. Otimização e Rastreamento:
