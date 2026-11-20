@@ -36,4 +36,4 @@ Com base nos resultados registrados, os modelos apresentaram os seguintes valore
 
 Caso queira verificar o código completo acesse aqui:
 
-[Plot dos gráficos]()
+[Plot dos gráficos](){ .md-button}
