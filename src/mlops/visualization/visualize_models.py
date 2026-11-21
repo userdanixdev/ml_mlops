@@ -22,17 +22,23 @@ def visualize_models():
         [
             "model",
             "accuracy",
-            "weighted avg_precision",
-            "weighted avg_recall",
-            "weighted avg_f1-score"
+            "malignant_precision",
+            "malignant_recall",
+            "malignant_f1-score",
+            "benign_precision",
+            "benign_recall",
+            "benign_f1-score"
         ]
     ].copy()
 
     comparison = comparison.rename(columns={
         "accuracy": "Accuracy",
-        "weighted avg_precision": "Precision",
-        "weighted avg_recall": "Recall",
-        "weighted avg_f1-score": "F1-score"
+        "malignant_precision": "Malignant Precision",
+        "malignant_recall": "Malignant Recall",
+        "malignant_f1-score": "Malignant F1-score",
+        "benign_precision": "Benign Precision",
+        "benign_recall": "Benign Recall",
+        "benign_f1-score": "Benign F1-score"
     })
 
     comparison = comparison.set_index("model")
@@ -111,7 +117,7 @@ def visualize_class_metrics():
         ax.set_title(f"Desempenho da classe: {class_name.capitalize()}")
         ax.set_xlabel("Modelos")
         ax.set_ylabel("Pontuação")
-        ax.set_ylim(0.90, 1.00)
+        #ax.set_ylim(0.90, 1.00)
         ax.legend(title="Métricas")
         ax.grid(axis="y", linestyle="--", alpha=0.5)
 
