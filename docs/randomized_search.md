@@ -146,3 +146,7 @@ Os artefatos gerados serão utilizados nas etapas seguintes:
 - Preparação do modelo para disponibilização por meio de uma API.
 
 > Assim, a otimização passa a fazer parte de um fluxo estruturado, no qual treinamento, avaliação, persistência e documentação são tratados de maneira organizada e reproduzível.
+
+Acesse a documentação técnica:
+
+[Documentação - Randomized SearchCV](https://github.com/userdanixdev/ml_mlops/blob/project_mlops/src/mlops/optimization/randomized_search.py){ .md-button}

@@ -29,16 +29,17 @@ nav:
       - Baseline - Logistic Regression: logistic_regression.md
       - Avaliação dos modelos: model_evaluation.md
 
-  - 4. Otimização e Rastreamento:
+  - 4. Otimização:
       - Visão Geral da Otimização: hyperparameter_tuning.md
       - RandomizedSearchCV: randomized_search.md
-      - Relatório de Otimização: reports_randomized_search.md
-      - HalvingGridSearchCV: halving_grid_search.md
-      - MLflow Tracking: mlflow_tracking.md
-      - MLflow Model Registry: mlflow_registry.md
-
+      - Relatório RandomizedSearchCV: reports_randomized_search.md
+      - HalvingGridSearchCV: hyperparameter_tuning_2.md
+      - Relatório HalvingGridSearchCV: report_hyperparameter_tuning_2.md
+      
   - 5. Registro do Modelo:
       - Model Registry: model_registry.md
+      - MLflow Tracking: mlflow_tracking.md
+      - MLflow Model Registry: mlflow_registry.md
 
   - 6. Monitoramento:
       - Data Drift: data_drift.md

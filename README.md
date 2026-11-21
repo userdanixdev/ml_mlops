@@ -7,9 +7,9 @@
 ![FastAPI](https://img.shields.io/badge/FastAPI-API-009688?logo=fastapi&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Containerization-2496ED?logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?logo=kubernetes&logoColor=white)
-![MkDocs](https://img.shields.io/badge/MkDocs-Documentation-526CFE?logo=markdown&logoColor=white)
-![Pytest](https://img.shields.io/badge/Pytest-Testing-0A9EDC?logo=pytest&logoColor=white)
-![Ruff](https://img.shields.io/badge/Ruff-Code%20Quality-D7FF64?logo=ruff&logoColor=black)
+
+
+
 
 # Projeto MLops - Breast Cancer Wisconsin
 
@@ -34,7 +34,7 @@ O projeto utilizará `Python` e ferramentas voltadas à análise de dados, trein
 - **Uvicorn**: servidor ASGI para execução da API.
 - **Docker**: containerização da aplicação.
 - **Kubernetes**: orquestração dos containers.
-- **Pytest, HTTPX e Ruff**: testes automatizados e qualidade do código.
+
 
 ### Com Poetry, teremos:
 
@@ -75,44 +75,12 @@ O projeto utilizará `Python` e ferramentas voltadas à análise de dados, trein
 
 > O ambiente de desenvolvimento foi configurado com as bibliotecas necessárias para análise de dados, treinamento de modelos, rastreamento de experimentos, desenvolvimento da API e testes automatizados.
 
-### Gerenciamento de dependências
-
-O Poetry foi utilizado para gerenciar as bibliotecas do projeto, separando as dependências principais das ferramentas de desenvolvimento.
-
-**Dependências principais:**
-
-| Biblioteca | Finalidade |
-|---|---|
-| NumPy | Operações numéricas e computacionais |
-| Pandas | Manipulação e análise de dados |
-| Scikit-learn | Construção e avaliação de modelos de Machine Learning |
-| Matplotlib | Visualização de dados |
-| Seaborn | Visualização estatística |
-| MLflow | Rastreamento de experimentos e gerenciamento de modelos |
-| FastAPI | Desenvolvimento da API de predição |
-| Uvicorn | Servidor ASGI para execução da API |
-| Pydantic | Validação e estruturação dos dados de entrada |
-
-**Dependências de desenvolvimento:**
-
-| Biblioteca | Finalidade |
-|---|---|
-| Pytest | Testes automatizados |
-| HTTPX | Testes de requisições e endpoints da API |
-| Ruff | Análise estática e padronização do código |
-
 ### Comandos utilitários:
 
 - Instalação das dependências principais:
 
 ```bash
 poetry add numpy pandas scikit-learn matplotlib seaborn mlflow fastapi "uvicorn[standard]" pydantic
-```
-
-- Instalação das dependências de desenvolvimento:
-
-```bash
-poetry add --group dev pytest httpx ruff
 ```
 
 ## Arquitetura:

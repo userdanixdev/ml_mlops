@@ -24,9 +24,8 @@ O Poetry permite organizar as dependências principais e as ferramentas de desen
 
 | Biblioteca | Finalidade |
 |---|---|
-| Pytest | Testes automatizados |
 | HTTPX | Testes de requisições e endpoints da API |
-| Ruff | Análise estática e padronização do código |
+
 
 ### Comandos de instalação
 
