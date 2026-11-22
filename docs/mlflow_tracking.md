@@ -1,6 +1,6 @@
 # MLflow Tracking
 
-O `MLflow Tracking` é utilizado para registrar, organizar e acompanhar os experimentos de `Machine Learning` desenvolvidos no projeto. Ele organiza as execuções de Machine Learning por meio de experimentos e Runs.
+O `MLflow Tracking` é utilizado para registrar, organizar e acompanhar os experimentos de `Machine Learning` desenvolvidos no projeto. Ele organiza as execuções de Machine Learning por meio de **Experiments** e **Runs.**
 
 ### Experiments
 
@@ -127,7 +127,7 @@ ml_mlops/
 
 A configuração foi implementada no módulo `src/mlops/tracking/mlflow_config.py` e a função `configure_mlflow()` centraliza essas configurações e é reutilizada pelo script de registro dos modelos.
 
-### Inicialização do Tracking
+## Inicialização do Tracking
 
 Para inicializar a configuração:
 
@@ -152,9 +152,7 @@ O registro dos experimentos foi implementado em:
 `src/mlops/tracking/register_optimization.py`
 
 Esse módulo centraliza o processo de registro dos quatro modelos.
-Uma característica importante da implementação é que ela não executa novamente os treinamentos ou as otimizações.
-
-Os modelos já treinados são carregados por meio do `Joblib`, enquanto as métricas e os resultados são recuperados dos arquivos produzidos nas etapas anteriores do pipeline.
+Uma característica importante da implementação é que ela não executa novamente os treinamentos ou as otimizações. Os modelos já treinados são carregados por meio do `Joblib`, enquanto as métricas e os resultados são recuperados dos arquivos produzidos nas etapas anteriores do pipeline.
 
 O **Joblib** permite recuperar os modelos previamente treinados:
 ```python
@@ -342,11 +340,11 @@ Na interface, o experimento `Breast Cancer Wisconsin` apresenta os quatro Runs r
 
 É importante diferenciar o Tracking do Model Registry.
 
-1. MLflow Tracking
+- MLflow Tracking
 
 Responsável pelo acompanhamento dos experimentos, registrando parâmetros, métricas, Runs e artefatos.
 
-2. MLflow Model Registry
+- MLflow Model Registry
 
 Responsável pelo gerenciamento do ciclo de vida dos modelos, incluindo versionamento, organização e controle dos modelos selecionados para utilização.
 
@@ -356,10 +354,10 @@ Responsável pelo gerenciamento do ciclo de vida dos modelos, incluindo versiona
 
 A implementação do `MLflow Tracking` permitiu centralizar os resultados das etapas de treinamento e otimização do projeto. Os quatro modelos foram registrados individualmente, preservando seus parâmetros, métricas, modelos e artefatos associados.
 
-A utilização do MLflow também reduziu a necessidade de desenvolver manualmente uma estrutura de rastreamento de experimentos, permitindo que os módulos de treinamento, otimização e avaliação permaneçam independentes.
+A utilização do **MLflow** também reduziu a necessidade de desenvolver manualmente uma estrutura de rastreamento de experimentos, permitindo que os módulos de treinamento, otimização e avaliação permaneçam independentes.
 
-Com essa etapa concluída, o projeto passa a ter uma estrutura de acompanhamento experimental mais organizada e preparada para avançar ao MLflow Model Registry, monitoramento de Data Drift e implantação da API de predição.
+Com essa etapa concluída, o projeto passa a ter uma estrutura de acompanhamento experimental mais organizada e preparada para avançar ao **MLflow Model Registry**, monitoramento de Data Drift e implantação da API de predição.
 
-Para consultar o material técnico completo clique aqui:
+*Para consulta do material técnico completo clique aqui:*
 
-[Documentação Técnica - MLflow Tracking](){. md-button}
+[Documentação Técnica - MLflow Tracking](https://github.com/userdanixdev/ml_mlops/tree/project_mlops/src/mlops/tracking){.md-button}
