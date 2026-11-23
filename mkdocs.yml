@@ -36,9 +36,8 @@ nav:
       - HalvingGridSearchCV: hyperparameter_tuning_2.md
       - Relatório HalvingGridSearchCV: report_hyperparameter_tuning_2.md
       
-  - 5. Registro do Modelo:
-      - Model Tracking: mlflow_tracking.md
-      - MLflow Registry: mlflow_registry.md
+  - 5. Registro & Rastreamento:
+      - MLflow Model Tracking: mlflow_tracking.md
       - MLflow Model Registry: mlflow_registry.md
 
   - 6. Monitoramento:

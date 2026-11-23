@@ -356,7 +356,7 @@ A implementação do `MLflow Tracking` permitiu centralizar os resultados das et
 
 A utilização do **MLflow** também reduziu a necessidade de desenvolver manualmente uma estrutura de rastreamento de experimentos, permitindo que os módulos de treinamento, otimização e avaliação permaneçam independentes.
 
-Com essa etapa concluída, o projeto passa a ter uma estrutura de acompanhamento experimental mais organizada e preparada para avançar ao **MLflow Model Registry**, monitoramento de Data Drift e implantação da API de predição.
+Com essa etapa concluída, o projeto passa a ter uma estrutura de acompanhamento experimental mais organizada e preparada para avançar ao **MLflow Model Registry**, monitoramento de **Data Drift** e implantação da **API** de predição.
 
 *Para consulta do material técnico completo clique aqui:*
 
