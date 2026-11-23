@@ -186,4 +186,4 @@ Ao concluir esta etapa, os quatro modelos desenvolvidos no projeto estarão cent
 
 Conslte a documentação técnica aqui:
 
-![Documentação Técnica - MLflow Model Registry]()
+[Documentação Técnica - MLflow Model Registry](https://github.com/userdanixdev/ml_mlops/blob/project_mlops/src/mlops/tracking/register_models.py){ .md-button}
