@@ -25,20 +25,6 @@ O diagrama abaixo representa o processo de transferência dos modelos do `Tracki
 
 A implementação foi organizada dentro do pacote `tracking`, mantendo a separação de responsabilidades.
 
-```text
-src/
-└── mlops/
-    └── tracking/
-        ├── __init__.py
-        ├── mlflow_config.py
-        ├── register_optimization.py
-        └── register_models.py
-
-.env
-.env.example
-.gitignore
-```
-
 | Arquivo | Responsabilidade |
 |---|---|
 | `mlflow_config.py` | Configuração do MLflow Tracking. |
