@@ -39,6 +39,8 @@ nav:
   - 5. Registro & Rastreamento:
       - MLflow Model Tracking: mlflow_tracking.md
       - MLflow Model Registry: mlflow_registry.md
+      - Model Evaluation & Selection: mlflow_selection.md
+      - Relatório de avaliação: model_selection_report.md
 
   - 6. Monitoramento:
       - Data Drift: data_drift.md

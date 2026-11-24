@@ -127,24 +127,30 @@ O Registry utiliza o mesmo banco SQLite configurado para o Tracking:
 ```text
 sqlite:///mlflow_project_cancer.db
 ```
-
-A configuração é realizada por:
-
-```python
-mlflow.set_registry_uri(mlflow.get_tracking_uri())
-```
-
-Dessa maneira, o Tracking e o Registry compartilham o mesmo armazenamento local.
+**Dessa maneira, o Tracking e o Registry compartilham o mesmo armazenamento local.**
 
 Com o ambiente configurado e os Run IDs disponíveis no `.env`, a execução é realizada a partir da raiz do projeto:
 
 ```powershell
 poetry run python src/mlops/tracking/register_models.py
 ```
-
 O script processa os quatro modelos e cria as versões correspondentes no Registry.
 
-Caso seja executado novamente, os Run IDs já registrados serão identificados e não gerarão versões duplicadas para as mesmas execuções.
+```
+= MLflow MODEL REGISTRY ==========
+Modelo registrado: breast-cancer-classifier
+Successfully registered model 'breast-cancer-classifier'.
+Created version '1' of model 'breast-cancer-classifier'.
+
+Modelo registrado: Random Forest Baseline
+Versão: 1
+Run ID: c6a419681a034f3080fdde4caa684bcf
+Logged Model ID: m-95d4d20a7edd44d3956bd5bfedfa3eba
+Registered model 'breast-cancer-classifier' already exists. Creating a new version of this model...
+Created version '2' of model 'breast-cancer-classifier'.
+```
+
+> Caso seja executado novamente, os Run IDs já registrados serão identificados e não gerarão versões duplicadas para as mesmas execuções.
 
 ## Diferença entre Tracking e Registry
 
